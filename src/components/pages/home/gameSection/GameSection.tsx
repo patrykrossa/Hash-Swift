@@ -27,7 +27,7 @@ export const GameSection: FC<IGameSectionProps> = ({
 
 	return (
 		<Flex flexDir='column' gap='24px'>
-			<Text fontSize='36px' fontWeight='600'>
+			<Text fontSize='36px' fontWeight='600' fontFamily='apex'>
 				{headingText}
 			</Text>
 			<Flex maxW='calc(100vw - 72px - 48px - 48px)'>

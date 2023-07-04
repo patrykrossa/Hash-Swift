@@ -16,7 +16,8 @@ export const AboutGame: FC<IAboutGame> = ({ description }) => {
 				fontSize='36px'
 				lineHeight='125%'
 				letterSpacing='0.5px'
-				fontWeight='600'>
+				fontWeight='600'
+				fontFamily='apex'>
 				About this game
 			</Text>
 			<Text fontSize='14px' lineHeight='150%' color='text.ternary'>

@@ -25,7 +25,11 @@ export const PopularGames = () => {
 
 	return (
 		<Flex p='24px 48px' mt='24px' flexDir='column' gap='16px'>
-			<Text fontSize='36px' fontWeight='600' letterSpacing='0.5px'>
+			<Text
+				fontSize='36px'
+				fontWeight='600'
+				letterSpacing='0.5px'
+				fontFamily='apex'>
 				Popular Games
 			</Text>
 			<Grid templateColumns='1fr 1fr' gap='24px'>

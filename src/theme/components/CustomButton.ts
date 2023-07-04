@@ -6,6 +6,7 @@ const brandPrimary = defineStyle({
 	bg: 'brand.primary',
 	_hover: { opacity: '0.9' },
 	borderRadius: '0',
+	fontFamily: 'apex',
 });
 
 const brandSecondary = defineStyle({
@@ -15,6 +16,7 @@ const brandSecondary = defineStyle({
 	border: '1px solid #FDB652',
 	_hover: { opacity: '0.9' },
 	borderRadius: '0',
+	fontFamily: 'apex',
 });
 
 export const buttonTheme = defineStyleConfig({

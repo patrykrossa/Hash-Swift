@@ -12,7 +12,8 @@ type Props = {
 const Layout = ({ children, title = 'HashSwift' }: Props) => (
 	<Box
 		bgGradient='linear(90deg, rgb(18, 19, 23) 0%, rgb(31, 33, 40) 48%, rgb(31, 33, 40) 100%)'
-		color='text.primary'>
+		color='text.primary'
+		fontFamily='poppins'>
 		<Navbar />
 		<Flex>
 			<Sidebar />

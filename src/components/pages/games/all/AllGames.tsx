@@ -23,7 +23,11 @@ export const AllGames = () => {
 
 	return (
 		<Flex p='24px 48px' mt='24px' flexDir='column' gap='16px'>
-			<Text fontSize='36px' fontWeight='600' letterSpacing='0.5px'>
+			<Text
+				fontSize='36px'
+				fontWeight='600'
+				letterSpacing='0.5px'
+				fontFamily='apex'>
 				All Games | {games.length}
 			</Text>
 			<Grid templateColumns='repeat(3, 1fr)' gap='24px'>

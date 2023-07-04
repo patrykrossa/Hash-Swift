@@ -29,7 +29,7 @@ export const GameItem: FC<IGameItemProps> = ({
 					bgPosition='center'
 					bgRepeat='no-repeat'></Flex>
 				<Flex flexDir='column'>
-					<Text fontSize='24px' fontWeight='500'>
+					<Text fontSize='24px' fontWeight='600' fontFamily='apex'>
 						{name}
 					</Text>
 					<Text

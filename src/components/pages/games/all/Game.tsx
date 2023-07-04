@@ -83,7 +83,8 @@ export const Game: FC<IGameProps> = ({
 					fontSize='24px'
 					fontWeight='600'
 					lineHeight='125%'
-					letterSpacing='0.5px'>
+					letterSpacing='0.5px'
+					fontFamily='apex'>
 					{name}
 				</Text>
 				<Text
@@ -91,8 +92,8 @@ export const Game: FC<IGameProps> = ({
 					fontSize='14px'
 					fontWeight='300'
 					lineHeight='150%'>
-					{description.length > 64
-						? description.slice(0, 54) + '...'
+					{description.length > 50
+						? description.slice(0, 50) + '...'
 						: description}
 				</Text>
 			</Flex>

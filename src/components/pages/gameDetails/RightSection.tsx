@@ -1,13 +1,5 @@
-import {
-	Box,
-	Button,
-	Divider,
-	Flex,
-	Link,
-	LinkBox,
-	Text,
-} from '@chakra-ui/react';
-import React, { FC, useEffect, useState } from 'react';
+import { Button, Divider, Flex, Link, Text } from '@chakra-ui/react';
+import React, { FC } from 'react';
 import { BsWindows } from 'react-icons/bs';
 import { BsApple } from 'react-icons/bs';
 import { BsDiscord } from 'react-icons/bs';
@@ -67,7 +59,8 @@ export const RightSection: FC<IRightSection> = ({
 				fontSize='32px'
 				lineHeight='125%'
 				letterSpacing='0.5px'
-				fontWeight='600'>
+				fontWeight='600'
+				fontFamily='apex'>
 				{name}
 			</Text>
 			<Flex align='center' gap='4px' maxW='428px' overflow='auto'>

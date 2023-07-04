@@ -2580,6 +2580,11 @@
     "@ethersproject/properties" "^5.7.0"
     "@ethersproject/strings" "^5.7.0"
 
+"@fontsource/poppins@^5.0.4":
+  version "5.0.4"
+  resolved "https://registry.yarnpkg.com/@fontsource/poppins/-/poppins-5.0.4.tgz#15d81b0d63081b6a9be0a04adbb8c1e802a68e24"
+  integrity sha512-9D7qztWP7prwrBMCf7pTbKDAfRG6KT1P9kEGimMUfRfznvfBIZ9H+y9Sr2vrE1O1Ybn4F8rrFZaLjtTxJZcTng==
+
 "@hashup-it/hashup-react-sdk@^0.1.13":
   version "0.1.13"
   resolved "https://registry.yarnpkg.com/@hashup-it/hashup-react-sdk/-/hashup-react-sdk-0.1.13.tgz#cfab4d7ed159786309a408dc2bcc69952372f7d0"

@@ -1,7 +1,6 @@
-import { Divider, Flex, Text } from '@chakra-ui/react';
+import { Flex } from '@chakra-ui/react';
 import React from 'react';
 import { INavlinkProps, Navlink } from './Navlink';
-import { Profile } from './Profile';
 import { Search } from './Search';
 
 const links: INavlinkProps[] = [

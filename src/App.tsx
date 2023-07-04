@@ -5,7 +5,11 @@ import { theme } from './theme/theme';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { Home } from './pages/Home';
 import GameDetails from './pages/GameDetails';
-import Games from './pages/Games';
+import { Games } from './pages/Games';
+import './styles/index.css';
+import './ApexMk2-Regular.otf';
+import '@fontsource/poppins';
+import './styles/index.css';
 
 const router = createBrowserRouter([
 	{

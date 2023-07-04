@@ -54,7 +54,8 @@ export const PopularGame: FC<IPopularGameProps> = ({
 					fontSize='24px'
 					fontWeight='600'
 					lineHeight='125%'
-					letterSpacing='0.5px'>
+					letterSpacing='0.5px'
+					fontFamily='apex'>
 					{name}
 				</Text>
 				<Text
