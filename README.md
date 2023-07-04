@@ -1,1 +1,1 @@
-GameSwift copy using the Hashup protocol.
+Open Source GameSwift implementation based on HashUp Protocol
