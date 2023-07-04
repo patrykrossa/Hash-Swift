@@ -19,12 +19,6 @@ export const GameSection: FC<IGameSectionProps> = ({
 }) => {
 	const carousel = useRef<AliceCarousel>(null);
 
-	useEffect(() => {
-		if (carousel.current) {
-			console.log(carousel.current);
-		}
-	}, [carousel]);
-
 	return (
 		<Flex flexDir='column' gap='24px'>
 			<Text fontSize='36px' fontWeight='600' fontFamily='apex'>

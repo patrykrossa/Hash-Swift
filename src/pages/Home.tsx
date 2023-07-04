@@ -1,4 +1,4 @@
-import { Flex, Text } from '@chakra-ui/react';
+import { Flex, Spinner } from '@chakra-ui/react';
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 import Layout from '../components/Layout';
@@ -16,8 +16,8 @@ export const Home = () => {
 			setGames(
 				res.data.slice(-12).filter((val: any) => val.name !== 'Game Name')
 			);
-			console.log(res.data);
-		} else console.log(res);
+		} else {
+		}
 		setLoading(false);
 	};
 
@@ -25,26 +25,31 @@ export const Home = () => {
 		getGames();
 	}, []);
 
+	document.title = `Home | HashSwift`;
+
 	return (
 		<Layout title='Home | HashSwift'>
-			<Flex flexDir='column' gap='48px' p='24px 48px'>
-				<Header />
-				<GameSection
-					headingText='New Games'
-					games={games.slice(-8).reverse()}
-				/>
-				<GameSection
-					headingText='Most Played'
-					isSmall
-					games={games.slice(0, 8)}
-				/>
-				<GameSection headingText='Top Whislisted' isSmall games={games} />
-				<GameSection
-					headingText='Recently Updated'
-					isSmall
-					games={games.slice(-10).reverse()}
-				/>
-			</Flex>
+			{!loading && (
+				<Flex flexDir='column' gap='48px' p='24px 48px'>
+					<Header />
+					<GameSection
+						headingText='New Games'
+						games={games.slice(-8).reverse()}
+					/>
+					<GameSection
+						headingText='Most Played'
+						isSmall
+						games={games.slice(0, 8)}
+					/>
+					<GameSection headingText='Top Whislisted' isSmall games={games} />
+					<GameSection
+						headingText='Recently Updated'
+						isSmall
+						games={games.slice(-10).reverse()}
+					/>
+				</Flex>
+			)}
+			{loading && <Spinner />}
 		</Layout>
 	);
 };

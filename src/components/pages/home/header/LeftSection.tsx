@@ -26,8 +26,8 @@ export const LeftSection: FC<ILeftSectionProps> = ({
 			setGames(
 				res.data.slice(-5).filter((val: any) => val.name !== 'Game Name')
 			);
-			console.log(res.data);
-		} else console.log(res);
+		} else {
+		}
 		setLoading(false);
 	};
 

@@ -35,7 +35,13 @@ export const Navlink: FC<INavlinkProps> = ({ location, text, isDisabled }) => {
 					position='absolute'
 					bottom='-21px'
 					left='0'
-					w={isHovering || pathname === location ? '100%' : '0%'}
+					w={
+						isHovering ||
+						(pathname.includes(location) && location !== '/') ||
+						(pathname === '/' && location === '/')
+							? '100%'
+							: '0%'
+					}
 					h='1px'
 					bgColor='brand.primary'
 					transition='all 0.3s ease-in-out 0s'

@@ -29,8 +29,8 @@ export const Search = () => {
 			setFilteredGames(
 				res.data.slice(-15).filter((val: any) => val.name !== 'Game Name')
 			);
-			console.log(res.data);
-		} else console.log(res);
+		} else {
+		}
 		setLoading(false);
 	};
 
@@ -44,7 +44,6 @@ export const Search = () => {
 			game.name.toLowerCase().includes(e.target.value.toLowerCase())
 		);
 		setFilteredGames(filtered);
-		console.log('filtered', filtered);
 	};
 
 	return (

@@ -12,8 +12,8 @@ export const AllGames = () => {
 		const res = await axios.get('https://open-api.hashup.it/v1/tokens/polygon');
 		if (res.status < 300) {
 			setGames(res.data.filter((val: any) => val.name !== 'Game Name'));
-			console.log(res.data);
-		} else console.log(res);
+		} else {
+		}
 		setLoading(false);
 	};
 

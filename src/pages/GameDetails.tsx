@@ -18,14 +18,16 @@ export default () => {
 		const res = await axios.get('https://open-api.hashup.it/v1/tokens/polygon');
 		if (res.status < 300) {
 			setGame(res.data.slice(-15).filter((val: any) => val.address === id));
-			console.log(res.data.slice(-15).filter((val: any) => val.address === id));
-		} else console.log(res);
+		} else {
+		}
 		setLoading(false);
 	};
 
 	useEffect(() => {
 		if (id !== undefined) getGames();
 	}, [id]);
+
+	document.title = `${game[0]?.name ?? ''} | HashSwift`;
 
 	return (
 		<Layout title={`${game[0]?.name ?? ''} | HashSwift`}>
